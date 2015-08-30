@@ -1,0 +1,8 @@
+{
+  "name": "grop",
+  "version": "0.1.0",
+  "description": "Get a random open port on the host machine",
+  "main": "index.js",
+  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
+  "license": "ISC"
+}
