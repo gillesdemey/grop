@@ -1,12 +1,35 @@
 {
   "name": "grop",
-  "version": "0.1.0",
-  "description": "Get a random open port on the host machine",
-  "main": "index.js",
-  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/gillesdemey/grop"
+  "version": "2.0.0",
+  "description": "Get an open port on the host machine",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
-  "license": "ISC"
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib",
+    "dev": "rslib --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillesdemey/grop.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@rslib/core": "^1.0.2",
+    "@types/node": "^24.19.0",
+    "typescript": "^7.0.2"
+  }
 }

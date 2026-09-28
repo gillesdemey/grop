@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2019"],
+    "target": "ES2019",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "rootDir": "src",
+    "strict": true,
+
+    /* modules */
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+
+    /* type checking */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src"]
+}
